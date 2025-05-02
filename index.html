@@ -10,7 +10,8 @@
   <title>PRACH & JANE</title>
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:image" content="https://matthew-frontend.github.io/Wedding-PrachJane/assets/images/preview-wedding-1.webp">
+  <meta property="og:image"
+    content="https://matthew-frontend.github.io/Wedding-PrachJane/assets/images/preview-wedding-1.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:type" content="website">
@@ -41,7 +42,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap" rel="stylesheet">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet"> -->
 
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://mattssru.github.io/wedding-prachjane/assets/css/style.css">
   <link rel="stylesheet" href="https://mattssru.github.io/wedding-prachjane/assets/css/slick.css" /> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -56,11 +57,11 @@
   <section class="section-banner">
     <div class="container">
       <div class="flex-banner">
-        <div class="banner-in">
+        <div class="banner-in" data-aos="zoom-in" data-aos-duration="2500">
           <h1>MARRIAGE</h1>
           <h3>OCCURRING IN</h3>
         </div>
-        <div class="countdown">
+        <div class="countdown" data-aos="zoom-in" data-aos-duration="2500">
           <ul>
             <li>
               <div class="item-countdown">
@@ -92,7 +93,7 @@
     </div>
   </section>
 
-  <section class="section-date">
+  <section class="section-date" data-aos="zoom-in" data-aos-duration="1500">
     <div class="container">
       <h2>INVITE YOU TO CELEBRATE OUR MARRIAGE</h2>
       <div class="date">
@@ -106,15 +107,17 @@
   <section class="section-schedule">
     <div class="container">
       <div class="grid-schedule">
-        <div class="img-schedule"><img src="./assets/images/prach_1.jpg" alt=""></div>
-        <div class="img-schedule"><img src="./assets/images/invite.png" alt=""></div>
+        <div class="img-schedule" data-aos="zoom-in-right" data-aos-duration="1500"><img
+            src="./assets/images/prach_1.jpg" alt=""></div>
+        <div class="img-schedule" data-aos="zoom-in-left" data-aos-duration="1500"><img src="./assets/images/invite.png"
+            alt=""></div>
       </div>
     </div>
   </section>
 
   <section class="section-gallery">
     <div class="container">
-      <div class="slider-gallery">
+      <div class="slider-gallery" data-aos="zoom-in" data-aos-duration="1500">
         <div class="img-gallery"><img src="./assets/images/slide_1.jpg" alt=""></div>
         <div class="img-gallery"><img src="./assets/images/slide_2.jpg" alt=""></div>
         <div class="img-gallery"><img src="./assets/images/slide_3.jpg" alt=""></div>
@@ -126,7 +129,7 @@
     </div>
   </section>
 
-  <section class="section-banner-gallery">
+  <section class="section-banner-gallery" data-aos="zoom-in" data-aos-duration="1500">
     <div class="slider-banner-gallery">
       <div class="img-gallery"><img src="./assets/images/slide_banner_1.jpg" alt=""></div>
       <div class="img-gallery"><img src="./assets/images/slide_banner_2.jpg" alt=""></div>
@@ -139,7 +142,7 @@
     </div>
   </section>
 
-  <section class="section-when">
+  <section class="section-when" data-aos="fade-up" data-aos-duration="3000">
     <div class="container">
       <h2 class="typewriter"></h2>
       <div class="grid-when">
@@ -169,32 +172,35 @@
     </div>
   </section>
 
-  <section class="section-map">
+  <section class="section-map" data-aos="zoom-in" data-aos-duration="1500">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.497428727199!2d100.42162677677146!3d13.74884939735842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e297e893d28abd%3A0x3b04163cc3699d94!2sTake%20a%20Breath%20caf%C3%A9%20%26%20eatery!5e0!3m2!1sth!2sth!4v1738594574968!5m2!1sth!2sth"
       style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 
-  <section class="section-wish">
+  <section class="section-wish" data-aos="zoom-out-up" data-aos-duration="2000">
     <div class="container">
-      <h2>ชวนส่งคำอวยพรให้บ่าวสาว</h2>
-      <p class="mb-5">อยากฝากข้อความถึงบ่าวสาว คอมเม้นท์ได้เลย!</p>
-      <form class="form-wish"
-        action="https://script.google.com/macros/s/AKfycby-as4uRlkVM5YVCUab7u3l1uIGLKYvwPuw9O8XesBtE2J9A2Uh4FJEvAzTZmZbZK3TWg/exec"
-        method="POST">
-        <div class="mb-3 text-start">
-          <label>ชื่อของคุณ</label>
-          <input type="text" name="first_name" id="first_name" class="input-field" placeholder="กรอกชื่อของคุณ..."
-            required>
-        </div>
-        <div class="mb-3 text-start">
-          <label>คำอวยพร</label>
-          <textarea name="wish" id="wish" class="input-field" rows="5" required placeholder="กรอกคำอวยพร..."></textarea>
-        </div>
-        <div class="form-field">
-          <button class="btn-wish" type="button">ส่งคำอวยพร</button>
-        </div>
-      </form>
+      <div style="border: 2px dashed #ccc; border-radius: 10px; padding: 30px 20px 20px 20px;">
+        <h2>ชวนส่งคำอวยพรให้บ่าวสาว</h2>
+        <p class="mb-5">อยากฝากข้อความถึงบ่าวสาว คอมเม้นท์ได้เลย!</p>
+        <form class="form-wish"
+          action="https://script.google.com/macros/s/AKfycby-as4uRlkVM5YVCUab7u3l1uIGLKYvwPuw9O8XesBtE2J9A2Uh4FJEvAzTZmZbZK3TWg/exec"
+          method="POST">
+          <div class="mb-3 text-start">
+            <label>ชื่อของคุณ</label>
+            <input type="text" name="first_name" id="first_name" class="input-field" placeholder="กรอกชื่อของคุณ..."
+              required>
+          </div>
+          <div class="mb-3 text-start">
+            <label>คำอวยพร</label>
+            <textarea name="wish" id="wish" class="input-field" rows="5" required
+              placeholder="กรอกคำอวยพร..."></textarea>
+          </div>
+          <div class="form-field">
+            <button class="btn-wish" type="button">ส่งคำอวยพร</button>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
   <!-- Modal ขอบคุณ -->
@@ -218,7 +224,7 @@
     </div>
   </div>
 
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
@@ -227,6 +233,7 @@
   <script src="./assets/js/wedding.js"></script>
 
   <script>
+    AOS.init();
     $(document).ready(function () {
       $('.slider-gallery').slick({
         slidesToShow: 3,
